@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="IMG/logo/logo.webp" type="image/x-icon">
+    <title>SkySweet Tentacion</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap');</style>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');</style>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Merienda:wght@300..900&display=swap');</style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <img src="IMG/logo/logo1.webp" alt="Logo Skysweet">
+        </div>
+        <!-- Aquí podría ir la imagen de VATIDOR, aunque está comentado -->
+        <div class="titulo">
+            <h1><strong>SkySweetTentaciones</strong></h1>
+        </div>
+        <div class="div-nav">
+            <nav>
+                <a href="index.html" class="nav-link"><strong>Home</strong></a>
+                <a href="Conocenos.html" class="nav-link"><strong>Conocenos</strong></a>
+                <a href="Servicios.html" class="nav-link"><strong>Servicios</strong></a>
+                <a href="Galeria.html" class="nav-link"><strong>Galeria</strong></a>
+                <a href="Cursos.html" class="nav-link active-nav-link"><strong>Cursos</strong></a>
+                <a href="Contactanos.html" class="nav-link"><strong>Contactanos</strong></a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- SECCIÓN CURSOS -->
+        <section id="cursos">
+            <div>
+                <h2><strong>- Cursos -</strong></h2>
+            </div>
+            <div class="subtitulo-curso">
+                <h3>¡Por el momento brindamos con un unico curso!<br>El cual es de <strong>Huevos de Pascua</strong></h3>
+            </div>
+            <div class="parrafo-curso">
+                <p>El curso consiste en 6 clases durante 6 semanas, los días de cursada serán los días Lunes y la experiencia obtenida en el mismo se tomará a prueba en una instancia final para obtener el título del mismo.</p><br>
+            </div>
+            <div>
+                <h3>
+                    - Imagenes del curso -
+                </h3>
+            </div>
+            <div class="img-curso">
+                <img src="IMG/main/huevopascua2.webp" alt="Imagen de Huevo de Pascua">
+                <img src="IMG/main/Huevopascua04.webp" alt="Imagen de Huevo de Pascua">
+                <img src="IMG/main/huevopascua3.webp" alt="Imagen de Huevo de Pascua">
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/g737dr6qYNk?si=44eauyvWxKbr4nhk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+    
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer">
+            <div class="footer-info">
+                <h3><strong>- Info. Personal -</strong></h3>
+                <p>
+                    <strong>Nombre - Bruno Rogora</strong><br>
+                    <strong>Edad - 18 Años</strong>
+                </p>
+            </div>
+            <div class="footer-img">
+                <img src="IMG/footer/fotofooter.webp" alt="Foto de Dev.">
+            </div>
+            <div class="footer-copy">
+                <h3><strong>- Copyright -</strong></h3>
+                <p>
+                    <strong>Gmail - bruno.duarte@davinci.edu.ar</strong><br>
+                    <strong>Ig - bruu_rog</strong>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            const nav = document.querySelector('nav');
+
+            if (window.scrollY > header.offsetHeight) {
+                nav.classList.add('fixed-nav');
+            } else {
+                nav.classList.remove('fixed-nav');
+            }
+        });
+
+    </script>
+</body>
+
+</html>

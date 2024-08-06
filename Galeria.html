@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="IMG/logo/logo.webp" type="image/x-icon">
+    <title>SkySweet Tentacion</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap');</style>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');</style>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Merienda:wght@300..900&display=swap');</style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <img src="IMG/logo/logo1.webp" alt="Logo Skysweet">
+        </div>
+        <!-- Sección para la imagen de VATIDOR (a implementar) -->
+        <div class="titulo">
+            <h1><strong>SkySweetTentaciones</strong></h1>
+        </div>
+        <nav>
+            <a href="index.html" class="nav-link"><strong>Home</strong></a>
+            <a href="Conocenos.html" class="nav-link"><strong>Conocenos</strong></a>
+            <a href="Servicios.html" class="nav-link"><strong>Servicios</strong></a>
+            <a href="Galeria.html" class="nav-link active-nav-link"><strong>Galeria</strong></a>
+            <a href="Cursos.html" class="nav-link"><strong>Cursos</strong></a>
+            <a href="Contactanos.html" class="nav-link"><strong>Contactanos</strong></a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- GALERÍA -->
+        <section id="galeria" class="galeria-section">
+            <h2><strong>- Galería -</strong></h2>
+            <div class="img-galeria">
+                <div>
+                    <img src="IMG/main/tortaxv.webp" alt="Torta 15 años">
+                    <img src="IMG/main/tortacartera.webp" alt="Torta Cartera">
+                    <img src="IMG/main/tortaprog.webp" alt="Torta Code">
+                </div>
+                <div>
+                    <img src="IMG/main/cheesecake.webp" alt="Cheese Cake">
+                    <img src="IMG/main/postres.webp" alt="Postre Frutilla">
+                    <img src="IMG/main/brownie.webp" alt="Brownie">
+                </div>
+                <div>
+                    <img src="IMG/main/huevospascua.webp" alt="Huevos de Pascua">
+                    <img src="IMG/main/desayuno.webp" alt="Desayuno">
+                    <img src="IMG/main/pandulce.webp" alt="Pan Dulce">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer">
+            <div class="footer-info">
+                <h3><strong>- Info. Personal -</strong></h3>
+                <p>
+                    <strong>Nombre:</strong> Bruno Rogora<br>
+                    <strong>Edad:</strong> 18 Años
+                </p>
+            </div>
+            <div class="footer-img">
+                <img src="IMG/footer/fotofooter.webp" alt="Foto de Dev.">
+            </div>
+            <div class="footer-copy">
+                <h3><strong>- Copyright -</strong></h3>
+                <p>
+                    <strong>Gmail:</strong> bruno.duarte@davinci.edu.ar<br>
+                    <strong>Ig:</strong> bruu_rog
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            const nav = document.querySelector('nav');
+
+            if (window.scrollY > header.offsetHeight) {
+                nav.classList.add('fixed-nav');
+            } else {
+                nav.classList.remove('fixed-nav');
+            }
+        });
+
+    </script>
+</body>
+
+</html>
